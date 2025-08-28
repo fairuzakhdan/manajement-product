@@ -1,0 +1,23 @@
+{
+  "development": {
+    "username": "postgres",
+    "password": "teapal900",
+    "database": "gudang",
+    "host": "127.0.0.1",
+    "dialect": "postgres"
+  },
+  "test": {
+    "username": "postgres",
+    "password": null,
+    "database": "gudang",
+    "host": "127.0.0.1",
+    "dialect": "postgres"
+  },
+  "production": {
+    "username": "postgres",
+    "password": null,
+    "database": "gudang",
+    "host": "127.0.0.1",
+    "dialect": "postgres"
+  }
+}
