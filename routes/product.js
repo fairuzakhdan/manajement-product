@@ -1,8 +1,11 @@
 const express = require("express");
 const router = express.Router();
 const prooduct = require("../controllers/product");
+const { productValidate } = require("../middleware/validator");
 
-router.route("/createPostProducts").post(prooduct.createProduct);
+router
+  .route("/createPostProducts")
+  .post(productValidate, prooduct.createProduct);
 router.route("/createPostMerk").post(prooduct.createMerk);
 
 router.route("/products").get(prooduct.getProduct);

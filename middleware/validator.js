@@ -1,5 +1,6 @@
 const productSchema = require('../schema/product')
 const ErrorHandler = require('../utils/ErrorHandler')
+
 const productValidate = async(req,res,next) => {
     const { error } = productSchema.validate(req.body)
     if (error) {
